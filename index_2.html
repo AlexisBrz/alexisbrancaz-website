@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style_2.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsive</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Alexis Brancaz</a>
+        <ul>
+            <li><a href="#1" onclick="toggle()">WHAT TO DO WITH THEIR WASTE</a></li>
+            <li><a href="#2" onclick="toggle()">THE BEHAVIOUR OF THE CLOUDS</a></li>
+            <li><a href="#Mh" onclick="toggle()">AU CONTACT DE CE REVELATEUR</a></li>
+            <li><a href="#X" onclick="toggle()">BLUE</a></li>
+            <li><a href="#3" onclick="toggle()">SUNDLAUG</a></li>
+            <li><a href="#5" onclick="toggle()">THE ROOTS ARE STILL WET</a></li>
+            <li><a href="#6" onclick="toggle()">POLYPHONY</a></li>
+            <li><a href="#6" onclick="toggle()">This immense, undulating desert, covered with pactches of dense fog</a></li>
+            <li><a href="#6" onclick="toggle()">ANGELA (or) Angela doesn’t know she’s a character</a></li>
+            <li><a href="/Users/alexisbrancaz/Documents/Web/Web_P1/contact.html" onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    
+    <section class="circ">
+        <div class="circle">
+            <div class="text">
+                <p>BE BACK SOON</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split(".").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+        )
+    </script>
+</body>
